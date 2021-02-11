@@ -10,7 +10,7 @@ class Allah(discord.Client):
         print('logged on as ' + str(self.user))
     async def on_message(self, message):
         if(message.content == 'Oh Allah!'):
-            await message.channel.send('Yes, my child')
+            await message.channel.send('Yes, my child') # WIll change to Qur'An
 load_dotenv('.env')
 client = Allah()
 client.run(os.getenv('Allah_token')) 
